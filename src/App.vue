@@ -1,6 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-src/main.js
+// src/main.js
 
 </script>
 
@@ -15,5 +15,6 @@ src/main.js
 <style scoped>
 .vue-app{
   border: 2px solid blue;
+  display: flex;
 }
 </style>

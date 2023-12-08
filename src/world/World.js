@@ -20,6 +20,8 @@ class World {
      camera = createCamera();
      scene = createScene("blue");
      renderer = createRenderer();
+     console.log('renderer', renderer.domElement)
+     console.log('container', container )
       // Initialize Loop
      loop = new Loop(camera, scene, renderer);
       container.append(renderer.domElement);
