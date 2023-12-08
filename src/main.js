@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
+import store from './store'
 
 // // import router from "./router";
 // import { World } from "./world/World.js";
@@ -18,4 +19,8 @@ import App from './App.vue'
  
 // main();
  
-createApp(App).mount("#app");
+createApp(App).use(store).mount("#app");
+// const app = createApp(App)
+// // app.use(store)
+// // app.use(router)
+// app.mount('#app')
