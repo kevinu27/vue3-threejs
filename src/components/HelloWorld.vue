@@ -24,6 +24,7 @@ const setVisibility = () => {
   console.log('click')
   // Use store.commit to update the state mutation
   store.commit('setVisibility');
+  // store.state.threeVisible= !store.state.threeVisible
 }
 
 const visibility = computed(() => {
@@ -34,6 +35,7 @@ const visibility = computed(() => {
 <template>
   <div class="vue">
     <p>hello</p>
+    <!-- <button class="buttonVisible" @click="setVisibility">{{ $store.state.threeVisible }}</button> -->
     <button class="buttonVisible" @click="setVisibility">{{ visibility }}</button>
   </div>
   <div v-show="visibility" id="scene-container"></div>
